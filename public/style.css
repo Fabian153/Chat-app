@@ -7,3 +7,91 @@ body {
   font-family: "Rubik", sans-serif;
   background: #f1f1f1;
 }
+.mockup-movil {
+  position: relative;
+}
+.background-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 500px;
+  border-radius: 30px;
+  /* Colores */
+  background: #fff;
+  box-shadow: 1px 0px 100px #bbb;
+}
+.background-fondo {
+  position: absolute;
+  margin: auto;
+  width: 235px;
+  height: 475px;
+  border-radius: 30px;
+  box-shadow: inset 1px 1px 10px #bbb;
+}
+/* Elementos de la cabecera */
+.background-header {
+  position: absolute;
+  bottom: 82.5%;
+  /**/
+  width: 235px;
+  height: 75px;
+  border-radius: 30px 30px 5px 5px;
+  background: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+}
+.background-camera {
+  position: relative;
+  top: -45.5%;
+  /**/
+  width: 120px;
+  height: 20px;
+  border-radius: 0px 0px 15px 15px;
+  /**/
+  background: #fff;
+}
+.contend-header {
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contend-header_user {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.contend-header_user .avatar {
+  margin-right: 5px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+}
+.contend-hedaer_user-text h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+}
+.contend-hedaer_user-text p {
+  color: hsl(206, 6%, 79%);
+  font-weight: 300;
+  font-size: 9px;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+}
+.menu-icon {
+  width: 10px;
+  height: 10px;
+}
+/**/
+.main-chat {
+  position: absolute;
+  display: flex;
+  width: 45%;
+  height: 80%;
+  bottom: 10px;
+  border: 1px solid;
+}
