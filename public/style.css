@@ -15,7 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 260px;
-  height: 500px;
+  height: 590px;
   border-radius: 30px;
   /* Colores */
   background: #fff;
@@ -25,23 +25,24 @@ body {
   position: absolute;
   margin: auto;
   width: 235px;
-  height: 475px;
-  border-radius: 30px;
+  height: 565px;
+  border-radius: 20px;
+  background: rgba(226, 231, 255, 0.8);
   box-shadow: inset 1px 1px 10px #bbb;
 }
 /* Elementos de la cabecera */
 .background-header {
   position: absolute;
-  bottom: 82.5%;
+  bottom: 85.6%;
   /**/
   width: 235px;
   height: 75px;
-  border-radius: 30px 30px 5px 5px;
+  border-radius: 20px 20px 5px 5px;
   background: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
 }
 .background-camera {
   position: relative;
-  top: -45.5%;
+  top: -46.6%;
   /**/
   width: 120px;
   height: 20px;
@@ -89,9 +90,132 @@ body {
 /**/
 .main-chat {
   position: absolute;
-  display: flex;
-  width: 45%;
-  height: 80%;
+  display: grid;
+  grid-template-columns: 60px auto 50px;
+  grid-template-rows: auto auto auto auto;
+  width: 17%;
+  height: 83.5%;
   bottom: 10px;
-  border: 1px solid;
+}
+.main-chat .chat {
+  align-self: center;
+  width: 100%;
+}
+.main-chat .chat-left {
+  align-self: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+}
+.main-chat .chat-rigth {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.main-chat .chat-audio {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.main-chat .bottom-submit {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.left {
+  padding: 8px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-size: 10px;
+  font-weight: 500;
+  background: rgba(136, 56, 255, 0.15);
+  color: rgb(146, 65, 200);
+  border-radius: 10px 10px 10px 5px;
+  box-shadow: 1px 1px 10px rgba(187, 187, 187, 0.5);
+}
+.rigth {
+  padding: 8px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  font-size: 10px;
+  font-weight: 500;
+  color: hsl(271, 36%, 24%);
+  background: hsl(0, 0%, 100%);
+  box-shadow: -1px 1px 10px rgba(187, 187, 187, 0.5);
+  border-radius: 10px 10px 5px 10px;
+}
+.audio {
+  margin-left: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  padding: 10px;
+  border-radius: 10px 10px 10px 5px;
+  background: linear-gradient(-90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+}
+.audio-text {
+  display: flex;
+  align-items: center;
+}
+.audio-text p {
+  font-size: 10px;
+  font-weight: 300;
+  padding-left: 8px;
+  color: #fff;
+}
+span {
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 8px;
+  color: #fff;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.bottom-submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95% !important;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: #fff;
+  border-radius: 50px;
+}
+.img-line {
+  position: relative;
+  right: -25px;
+  padding-bottom: 5px;
+}
+.img-line > img {
+  padding-left: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+.bottom-submit > img {
+  padding: 2px;
+  border-radius: 50%;
+  background: hsl(262, 21%, 10%);
+}
+.bottom-submit > input {
+  border: none;
+  font-size: 10px;
+  outline: none;
+  padding-left: 5px;
+}
+.bottom-submit > input::placeholder {
+  color: rgb(195, 199, 219);
 }
